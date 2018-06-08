@@ -1,7 +1,12 @@
 // Business Logic
 
 var translate = function(number){
-  return number;
+  var result = [];
+
+  for(var i = 0; i <= number; i += 1){
+    result.push(i);
+  }
+  return result.toString();
 }
 
 
