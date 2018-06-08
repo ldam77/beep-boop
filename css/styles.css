@@ -12,8 +12,6 @@ body {
 h1 {
   position: relative;
   display: inline-block;
-
-  /* font-size: 1.5em; */
 }
 
 .button {
@@ -32,10 +30,10 @@ h1 {
     -webkit-box-sizing: border-box;
     border-left: .5em solid;
 
-    -webkit-animation: typing 16s steps(33, end) infinite,
-        blinking .5s step-end infinite;
-    animation: typing 16s steps(33, end) infinite,
-        blinking .5s step-end infinite;
+    -webkit-animation: typing 8s steps(33, end) infinite,
+        blinking .25s step-end infinite;
+    animation: typing 8s steps(33, end) infinite,
+        blinking .25s step-end infinite;
 }
 
 @-webkit-keyframes typing {
