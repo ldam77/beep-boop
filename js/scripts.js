@@ -3,7 +3,9 @@
 var translate = function(number){
   var result = [];
 
-  if(number.toString().indexOf('1') > -1){
+  if(number > 0 && number%3 === 0){
+    return "I'm sorry, Dave. I'm afraid I can't do that.";
+  } else if(number.toString().indexOf('1') > -1){
     return "Boop!";
   } else if(number%10 === 0){
     return "Beep!";
