@@ -7,7 +7,7 @@ var translate = function(number){
   var result = [];
 
 // Check for each exceptions, using if, if else to cascade down from most important to least
-  if(number < 0){
+  if(number < 0 || isNaN(number)){
     return " This mission is too important for me to allow you to jeopardize it."
   }else if(number > 0 && number%3 === 0){
     return "I'm sorry, Dave. I'm afraid I can't do that.";
