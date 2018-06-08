@@ -3,8 +3,12 @@
 var translate = function(number){
   var result = [];
 
-  for(var i = 0; i <= number; i += 1){
-    result.push(i);
+  if(number%10 === 0){
+    return "Beep!";
+  } else {
+    for(var i = 0; i <= number; i += 1){
+      result.push(i);
+    };
   }
   return result.toString();
 }
